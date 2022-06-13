@@ -22,7 +22,7 @@ def contact(request):
             fail_silently=False,
         )
 
-        return render(request, 'contact.html', {'sender_name': sender_name})
+        return render(request, 'index.html', {'sender_name': sender_name})
     
     else:
-        return render(request, 'contact.html', {})
+        return render(request, 'index.html', {})
